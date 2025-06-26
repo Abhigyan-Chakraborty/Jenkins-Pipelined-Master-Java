@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Abhigyan-Chakraborty/Jenins-Pipelined-Master-Java.git', branch: 'main'
+                git url: 'https://github.com/Abhigyan-Chakraborty/Jenkins-Pipelined-Master-Java.git', branch: 'main'
             }
         }
 
