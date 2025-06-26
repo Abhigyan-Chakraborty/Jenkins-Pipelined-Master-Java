@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy to Tomcat') {
             steps {
                 script {
-                    def warFile = findFiles(glob: '**/target/*.war')[0].path
+                    def warFile = "target/my-webapp.war"
                     def tomcatUrl = 'http://localhost:8082/manager/text/deploy'
                     def contextPath = '/myapp' // You can use '' for ROOT
 
