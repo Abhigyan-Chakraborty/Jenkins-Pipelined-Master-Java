@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         // Adjust these if using a different location or setup
-        MAVEN_HOME = tool 'Maven 3.8.1'     // Or your configured Maven tool name in Jenkins
-        JAVA_HOME = tool 'JDK 11'           // Adjust based on Jenkins global config
+        MAVEN_HOME = tool 'Maven 3.9.1'     // Or your configured Maven tool name in Jenkins
+        JAVA_HOME = tool 'JDK 21'           // Adjust based on Jenkins global config
         PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${env.PATH}"
     }
 
